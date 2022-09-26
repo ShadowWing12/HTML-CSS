@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 10</title>
+    <style>
+        div {
+            border: 2px solid black;
+            margin: auto;
+            padding: 5px;
+        }
+
+        #container::after,
+        #leftSide::after,
+        #content::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        #container {
+            width: 625px;
+        }
+
+        #header,
+        #subNav {
+            width: 90%;
+            height: 50px;
+            margin-top: 10px;
+        }
+
+        #leftSide {
+            border: none;
+            float: left;
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: none;
+        }
+
+        #nav {
+            width: 100px;
+            height: 215px;
+            float: left;
+        }
+
+        #content {
+            width: 300px;
+            float: right;
+            margin-left: 15px;
+        }
+
+        .textBox {
+            float: left;
+            width: 75px;
+            height: 100px;
+            margin-left: 8px;
+            margin-top: 10px;
+
+        }
+
+        #ads {
+            width: 100px;
+            height: 300px;
+            float: left;
+            margin-left: 13px;
+            margin-top: 15px;
+        }
+
+        #footer {
+            clear: left;
+            margin-top: 250px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        #container
+        <div id="header">#header</div>
+        <div id="leftSide">
+            <div id="nav">#nav</div>
+            <div id="content">
+                #content
+                <div id="subNav">#subNav</div>
+                <div class="textBox"></div>
+                <div class="textBox"></div>
+                <div class="textBox"></div>
+            </div>
+            <div id="footer">#footer</div>
+        </div>
+        <div id="ads">#ads</div>
+    </div>
+</body>
+
+</html>

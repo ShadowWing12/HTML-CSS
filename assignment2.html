@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Richard Salmeron - Task 2 -->
+        
+        <style>
+
+            
+            body{
+                margin: 0px;
+                padding: 0px;
+
+                font-weight: bold;
+                font-size: larger;
+
+            }
+
+            .main{
+                border: 0px solid rgb(0, 0, 0);
+                margin: 0px;
+                padding: 0px;
+                height: fit-content;
+                width: auto;
+
+                text-align: center;
+
+            }
+
+            .header{
+                border: 3px solid rgb(255, 5, 197);
+                margin: 5px;
+                padding: 0px;
+                height: 100px;
+
+                line-height: 100px;
+
+            }
+
+            .sideBarLeft{
+                border: 3px solid rgb(0, 0, 255);
+                margin: 5px;
+                padding: 0px;
+                height: 200px;
+                width: 100px;
+
+                text-align: right;
+              
+                float: left;
+                
+            }
+
+            .sideBarRight{
+                border: 3px solid rgb(255, 255, 0);
+                margin: 5px;
+                padding: 0px;
+                height: 200px;
+                width: 100px;
+
+                text-align: right;
+
+                float: right;
+                
+            }
+
+            .content{
+                border: 3px solid rgb(255, 0, 0);
+                margin: auto;
+                margin-top: 5px;
+                padding: 0px;
+
+                min-height: 200px;
+                min-width: 240px;
+
+                height: calc(100vh - 200px);
+                width: calc(100vw - 260px);
+                
+                display: inline-block;
+
+                line-height: 100px;
+                
+
+            }
+
+            
+            .footer{
+                clear: both;
+                border: 3px solid rgb(0, 255, 0);
+                margin: 5px;
+                padding: 0px;
+                height: 50px;
+
+                line-height: 50px;
+                
+            }
+
+            /*Option 2*/
+
+            /*
+            .flexContainer {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+            */
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="main">
+
+            <div class="header">
+                Header
+            </div>
+            
+            <div class="sideBarLeft">
+                Side Bar Left
+            </div>
+
+            <div class="content">
+                Content
+            </div>
+
+            <div class="sideBarRight">
+                Side Bar Right
+            </div>
+
+            <!-- Option 2
+            <div class="flexContainer">
+               
+                <div class="sideBarLeft">
+                    Side Bar Left
+                </div>
+    
+                <div class="content">
+                    Content
+                </div>
+    
+                <div class="sideBarRight">
+                    Side Bar Right
+                </div>
+    
+            </div>
+            -->
+
+            <div class="footer">
+                Footer
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

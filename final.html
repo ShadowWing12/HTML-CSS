@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            table{
+                margin: auto;
+                border-collapse: collapse;
+                border: 2px solid black;
+                background-color: #cbfffe;
+            }
+            td, th{
+                padding: 10px;
+            }
+            input{
+                font-size: larger;
+                margin-top: 25px;
+            }
+            label{
+                font-size: 22px;
+            }
+            #bday{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 18px;
+                font-weight: bold;
+                width: 250px;
+            }
+            caption{
+                font-size: 20px;
+                font-weight: 600;
+            }
+            #hobbies{
+                margin-top: 0;
+            }
+            .checks{
+                font-size: 20px;
+                font-weight: bold;
+                padding-top: 20px;
+            }
+            button{
+                padding: 5px;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            textarea{
+                margin-right: 10px;
+                margin-bottom: -10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <table>
+                <caption>Personal Information</caption>
+                <tr>
+                    <th><label for="fname">First Name</label></th>
+                    <td><input type="text" id="fname" name="fname" placeholder="Add your first name"></td>
+                </tr>
+                <tr>
+                    <th><label for="lname">Last Name</label></th>
+                    <td><input type="text" id="lname" name="lname" placeholder="Add your last name"></td>
+                </tr>
+                <tr>
+                    <th><label for="bday">Birthday</label></th>
+                    <td><input type="date" id="bday" name="bday"></td>
+                </tr>
+                <tr>
+                    <th><label for="pnum">Phone Number</label></th>
+                    <td><input type="tel" id="pnum" name="pnum" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"></td>
+                </tr>
+                <tr>
+                    <th><label for="hobbies">Hobbies</label></th>
+                    <td class="checks">
+                        <input type="checkbox" name="traveling" id="hobbies" value="Traveling"> Traveling
+                        <br>
+                        <input type="checkbox" name="swimming" id="hobbies" value="Swimming"> Swimming
+                        <br>
+                        <input type="checkbox" name="socialMedia" id="hobbies" value="Social Media"> Social Media
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="message">Message</label></th>
+                    <td><textarea name="message" id="message" cols="35" rows="8"></textarea></td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

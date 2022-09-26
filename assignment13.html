@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 13</title>
+        <style>
+            div{
+                margin: auto;
+            }
+            table,tr,td{
+                
+                border-collapse: collapse;
+                padding: 0px;
+            }
+            #main{
+                height: 420px;
+                width: 539px;
+                background-color: #8DCFED;
+                border: 1px solid #78A7BB;
+                padding: 40px;
+            }
+            input{
+                height: 76px;
+                width: 401px;
+                background-color: #78A7BB;
+                color: white;
+                font-size: 28px;
+                font-weight: bold;
+                font-family: Helvetica, Arial, sans-serif;
+                border-radius: 8px;
+                border: none;
+                box-shadow: 0px 8px #618698 inset;
+                margin-bottom: 12px;
+            }
+            button{
+                height: 68px;
+                width: 123px;
+                color: #81898E;
+                font-size: 28px;
+                font-weight: bold;
+                font-family: Helvetica, Arial, sans-serif;
+                border-radius: 8px;
+                border: none;
+            }
+            #clear{
+                color: white;
+                background-color: #FF9FA7;
+                box-shadow: 0px 8px #FF7B83;
+                margin-bottom: 20px;
+            }
+            .number{
+                background-color: #FFFFFF;
+                box-shadow: 0px 8px #78A7BB;
+                margin-bottom: 20px;
+                margin-right: 15px;
+            }
+            .opp{
+                background-color: #FFF0F5;
+                box-shadow: 0px 8px #78A7BB;
+                margin-bottom: 20px;
+            }
+            #equal{
+                background-color: #F1FF8B;
+                box-shadow: 0px 8px #9CAB44;
+                margin-top: -20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="main">
+            <form action="">
+                <table>
+                    <tr>
+                        <td><button type="button" id="clear">C</button></td>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="number" id="seven" value="7">7</button></td>
+                        <td><button type="button" class="number" id="eight" value="8">8</button></td>
+                        <td><button type="button" class="number" id="nine" value="9">9</button></td>
+                        <td><button type="button" class="opp" id="plus" value="+">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="number" id="four" value="4">4</button></td>
+                        <td><button type="button" class="number" id="five" value="5">5</button></td>
+                        <td><button type="button" class="number" id="six" value="6">6</button></td>
+                        <td><button type="button" class="opp" id="minus" value="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="number" id="one" value="1">1</button></td>
+                        <td><button type="button" class="number" id="two" value="2">2</button></td>
+                        <td><button type="button" class="number" id="three" value="3">3</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="number" id="zero" value="0">0</button></td>
+                        <td><button type="button" class="number" id="point" value=".">.</button></td>
+                        <td><button type="button" id="equal" value="=">=</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

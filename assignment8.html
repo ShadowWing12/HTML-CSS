@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 8</title>
+        <style>
+            table{
+                border-style: outset;
+                margin: auto;
+            }
+            td, th{
+                border-style: inset;
+            }
+            th{
+                background-color: rgb(206, 159, 250);
+            }
+            p{
+                margin: 0;
+            }
+            #name{
+                width: 96%;
+                border: 1px inset grey;
+            }
+            #eyeClr, #physique{
+                border-style: inset;
+            }
+            textarea{
+                width: 99%;
+                height: 50px;
+                margin: 1% 0 -1%;
+                border-style: inset;
+            }
+            .buttonCell{
+                text-align: center;
+            }
+            button{
+                background-color: rgb(189, 189, 189);
+                border: 1px outset black;
+                border-style: outset;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <form action="">
+                <tr>
+                    <th>Name</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name">Name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Sex</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="gender" name="gender" value="Male">Male
+                        <br>
+                        <input type="radio" id="gender" name="gender" value="Female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="eyeClr">Eye color</label>
+                    </td>
+                    <td>
+                        <select name="eyeClr" id="eyeClr">
+                            <option value="green">green</option>
+                            <option value="blue">blue</option>
+                            <option value="black">black</option>
+                            <option value="brown">brown</option>
+                            <option value="grey">grey</option>
+                            <option value="mone">none</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="physique">Check all that apply</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="tall" id="physique">Over 6 feet tall
+                        <br>
+                        <input type="checkbox" name="wide" id="physique">Over 200 pounds
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td rowspan="4" colspan="2">
+                        <label for="ability">Describe your athletic ability:</label>
+                        <br>
+                        <textarea name="ability" id="ability" cols="38" rows="3"></textarea>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td class="buttonCell" colspan="3">
+                        <p><button type="submit">Enter my information</button></p>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>
